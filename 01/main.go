@@ -35,7 +35,7 @@ func main() {
 
 	// action get data
 	svc := &v1.Service{}
-	err = clientSet.Get().Namespace("default").Resource("services").Name("sonarqube").Do(context.TODO()).Into(svc)
+	err = clientSet.Get().Namespace("default").Resource("services").Name("test").Do(context.TODO()).Into(svc)
 	if err != nil {
 		panic(err)
 	} else {
